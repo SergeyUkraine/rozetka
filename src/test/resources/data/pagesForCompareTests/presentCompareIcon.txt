@@ -1,0 +1,9 @@
+notebooks/c80004/
+mobile-phones/c80003/
+vdr/c153617/
+trimmers/c155089/
+bicycles/c83884/
+podguzniki-i-pelenanie/c3973646/
+school_bags/c163943/
+krepkie-napitki/c4594292/
+ofisnye-kresla-i-stulya/c154072/

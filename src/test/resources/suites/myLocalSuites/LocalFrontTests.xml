@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Catalog regression">
+    <parameter name="browser" value="CHROME"/>
+    <parameter name="baseUrl" value="https://rozetka.com.ua/"/>
+    <parameter name="manShoesCategoryURL" value="men_shoes/c721654/"/>
+    <parameter name="notebooksCategoryURL" value="notebooks/c80004/"/>
+    <parameter name="hubUrl" value="http://localhost:4444/wd/hub"/>
+
+    <test  name="Front" enabled="true">
+        <classes>
+            <class name="rozetka.catalog.front.BonusTest"/>
+            <class name="rozetka.catalog.front.CompareTest"/>
+            <class name="rozetka.catalog.front.FiltersTest"/>
+            <class name="rozetka.catalog.front.HorizontalMenuTest"/>
+            <class name="rozetka.catalog.front.PaginationTest"/>
+            <class name="rozetka.catalog.front.SuperPortalTest"/>
+            <class name="rozetka.catalog.front.ViewAndSortTest"/>
+        </classes>
+    </test>
+</suite>

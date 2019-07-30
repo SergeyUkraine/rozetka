@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite thread-count="1" name="api_tests" parallel="methods">
+    <parameter name="browser" value="CHROME"/>
+    <parameter name="baseUrl" value="https://catalog-api.rozetka.com.ua/"/>
+    <parameter name="manShoesCategoryURL" value="men_shoes/c721654/"/>
+    <parameter name="hubUrl" value="http://localhost:4444/wd/hub"/>
+
+    <test  name="Front" enabled="true">
+        <classes>
+            <class name="rozetka.catalog.api.CeoAPITest"/>
+            <class name="rozetka.catalog.api.Sort"/>
+            <class name="rozetka.catalog.api.RobotsAPITest">
+                <parameter name="url" value="https://catalog-api-rozetka.com.ua/goods/getFilters?"/>
+            </class>
+            <class name="rozetka.catalog.api.CategoriesAPITest">
+                <parameter name="getCategoriesUrl" value="https://catalog-api.rozetka.com.ua/v2/categories/getChildren?category_id="/>
+                <parameter name="getDetailsUrl" value="https://catalog-api.rozetka.com.ua/v2/goods/getDetails?product_ids="/>
+            </class>
+        </classes>
+    </test>
+</suite>

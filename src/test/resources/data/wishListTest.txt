@@ -1,0 +1,7 @@
+goodsNumber===1
+goodsQuantity===1
+mainEmail===wishlist1@yopmail.com
+mainPassword===Test123
+additionalEmail===wishlist2@yopmail.com
+additionalPassword===Test123
+customWishListTitle===Wishlist
